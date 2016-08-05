@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Page Error</title>
+		<style>
+			body {
+				background-color:#000;
+				color:#CCC;
+			}
+			h1 {
+				color:#F00;
+			}
+			p, pre {
+				margin-left:40px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Page Error</h1>
+		<hr />
+		<p><?php echo $error->getMessage() ?></p>
+		<pre><?php echo $error->getTraceAsString() ?></pre>
+	</body>
+</html>
